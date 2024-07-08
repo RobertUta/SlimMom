@@ -48,7 +48,7 @@ const DiaryAddProductForm = ({ date, mobile }) => {
           setProducts([]);
         });
     }, 400),
-    [],
+    [api, setChoosenProductId, setProducts, setError], // Include dependencies here
   );
 
   const handleChangeField = ({ target }) => {

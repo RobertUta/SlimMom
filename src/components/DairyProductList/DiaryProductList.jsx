@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useEffect } from 'react'; // Importing useEffect from React
 import PropTypes from 'prop-types';
 import styles from './DiaryProductsList.module.scss';
 import DiaryProductsListItem from '../DiaryProductListItem';
