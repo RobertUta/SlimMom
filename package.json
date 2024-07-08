@@ -1,7 +1,8 @@
 {
-  "name": "SlimMom",
+  "name": "slimmom",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://RobertUta.github.io/slimmom/",
   "repository": {
     "type": "git"
   },
