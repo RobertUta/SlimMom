@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { useDispatch,  } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Button from '../shared/Button/Button';
 import ops from '../../redux/auth/authOperations';
 import css from './RegistrationForm.module.scss';
@@ -22,7 +21,6 @@ const RegistrationForm = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
-
   const handleClick = () => {
     history.push('/login');
   };
@@ -42,7 +40,7 @@ const RegistrationForm = () => {
         >
           {({ errors, touched }) => (
             <Form className={css.registrationForm}>
-              <h1>REGISTER</h1>
+              <h2>REGISTER</h2>
               <div className={css.registrationInputs}>
                 <label className={css.formLabel}>
                   <Field
