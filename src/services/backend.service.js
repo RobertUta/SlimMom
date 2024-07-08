@@ -57,6 +57,8 @@ class PhonebookService {
   }
 }
 
+// Create an instance of PhonebookService
 const phonebookService = new PhonebookService();
 
+// Export the instance
 export default phonebookService;

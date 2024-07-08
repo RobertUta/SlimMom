@@ -130,7 +130,7 @@ const DiaryAddProductForm = ({ date, mobile }) => {
           </label>
           {window.innerWidth < 650 ? (
             <Button type="submit" className={css.secondaryButton} disabled={isLoading}>
-              Добавить
+              Add
             </Button>
           ) : (
             <Button type="submit" className={css.plusButton} disabled={isLoading}>

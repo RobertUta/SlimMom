@@ -143,7 +143,7 @@ function DailyCaloriesForm() {
                     }`}
                   />
                 </div>
-                <h3 className={styles.DailyCaloriesFormBloodTitle}>Blood group *</h3>
+                <h3 className={styles.DailyCaloriesFormBloodTitle}>Blood type *</h3>
                 <div className={styles.DailyCaloriesFormBloodWrapper}>
                   <div>
                     <Field id="I" type="radio" name="bloodType" value="1" className={styles.DailyCaloriesLabelField} />
