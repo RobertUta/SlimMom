@@ -1,21 +1,17 @@
-import { Box, Flex, Spinner } from '@chakra-ui/react';
-import AppBar from 'components/AppBar/AppBar';
-import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Header from '../Header';
+// import styles from './Layout.module.scss';
 
-export default function Layout() {
-    return (
-        <>
-            <Box padding='4' width="100%">
-                <AppBar />
-            </Box>
+const Layout = ({ children }) => (
+  <>
+    <Header />
+    {children}
+  </>
+);
 
-            <Box padding='4' width="100%">
-                <Suspense fallback={<Flex justifyContent='center' width="100%"><Spinner /></Flex>}>
-                    <Outlet />
-                </Suspense>
-            </Box>
-        </>
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
-    );
-}
+export default Layout;
