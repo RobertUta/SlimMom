@@ -1,8 +1,7 @@
 {
-  "name": "slimmom",
+  "name": "SlimMom",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RobertUta.github.io/slimmom/",
   "repository": {
     "type": "git"
   },
@@ -38,6 +37,7 @@
     "yup": "^0.32.8"
   },
   "scripts": {
+    "lint:js": "eslint src",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
